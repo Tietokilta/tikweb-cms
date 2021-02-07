@@ -2,6 +2,6 @@
 
 ## Setup
 
-````
+```
 mv .env.example .env 
 ```
