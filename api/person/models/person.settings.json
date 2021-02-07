@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "name": "Person"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "FirstName": {
+      "type": "string",
+      "required": true
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "Bio": {
+      "type": "richtext"
+    },
+    "FuksiYear": {
+      "type": "integer"
+    }
+  }
+}
