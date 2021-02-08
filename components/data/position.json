@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_data_positions",
+  "info": {
+    "name": "Position",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "people": {
+      "collection": "person"
+    },
+    "positionTitle": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.contact-info"
+    }
+  }
+}

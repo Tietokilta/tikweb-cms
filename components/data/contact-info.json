@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_data_contact_infos",
+  "info": {
+    "name": "ContactInfo",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "platform": {
+      "type": "enumeration",
+      "enum": [
+        "Email",
+        "Phone",
+        "Telegram",
+        "IRC"
+      ]
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

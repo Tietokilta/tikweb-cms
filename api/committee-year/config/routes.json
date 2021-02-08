@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/committee-years",
+      "handler": "committee-year.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/committee-years/count",
+      "handler": "committee-year.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/committee-years/:id",
+      "handler": "committee-year.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/committee-years",
+      "handler": "committee-year.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/committee-years/:id",
+      "handler": "committee-year.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/committee-years/:id",
+      "handler": "committee-year.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -11,22 +11,31 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "FirstName": {
+    "firstName": {
       "type": "string",
       "required": true
     },
-    "LastName": {
+    "lastName": {
       "type": "string"
     },
-    "Bio": {
+    "bio": {
       "type": "richtext"
     },
-    "FuksiYear": {
+    "fuksiYear": {
       "type": "integer"
     },
-    "Nick": {
+    "nick": {
       "type": "uid",
       "required": true
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.contact-info"
+    },
+    "positions": {
+      "via": "person",
+      "collection": "position"
     }
   }
 }
