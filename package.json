@@ -2,7 +2,7 @@
   "name": "tietokilta-web",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "A Tietokilta web page of Future",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -24,7 +24,7 @@
     "pg": "latest"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Tietokillan Digitoimikunta"
   },
   "strapi": {
     "uuid": "f32c58af-68af-41d6-9877-711d8953de28"
