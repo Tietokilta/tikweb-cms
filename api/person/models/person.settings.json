@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "people",
   "info": {
-    "name": "Person"
+    "name": "Person",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -22,6 +23,10 @@
     },
     "FuksiYear": {
       "type": "integer"
+    },
+    "Nick": {
+      "type": "uid",
+      "required": true
     }
   }
 }
