@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_common_content_text_blocks",
+  "info": {
+    "name": "TextBlock",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
