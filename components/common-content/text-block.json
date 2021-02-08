@@ -1,15 +1,15 @@
 {
-  "collectionName": "components_common_content_text_blocks",
-  "info": {
-    "name": "TextBlock",
-    "icon": "align-justify",
-    "description": ""
-  },
-  "options": {},
-  "attributes": {
-    "text": {
-      "type": "richtext",
-      "required": true
+    "collectionName": "components_common_content_text_blocks",
+    "info": {
+        "name": "TextBlock",
+        "icon": "align-justify",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "text": {
+            "type": "richtext",
+            "required": true
+        }
     }
-  }
 }
