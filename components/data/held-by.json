@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_data_positions",
+  "collectionName": "components_data_held_bies",
   "info": {
-    "name": "Position",
-    "icon": "address-book",
+    "name": "HeldBy",
+    "icon": "child",
     "description": ""
   },
   "options": {},
@@ -10,8 +10,8 @@
     "people": {
       "collection": "person"
     },
-    "positionTitle": {
-      "type": "string"
+    "year": {
+      "type": "integer"
     },
     "contact": {
       "type": "component",

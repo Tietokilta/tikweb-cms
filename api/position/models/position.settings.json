@@ -11,24 +11,17 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "year": {
-      "type": "integer"
-    },
-    "introduction": {
+    "description": {
       "type": "richtext"
     },
-    "person": {
-      "model": "person",
-      "via": "positions"
-    },
-    "contact": {
+    "holder": {
       "type": "component",
       "repeatable": true,
-      "component": "data.contact-info"
+      "component": "data.held-by"
     }
   }
 }

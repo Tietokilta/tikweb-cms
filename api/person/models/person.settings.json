@@ -32,10 +32,6 @@
       "type": "component",
       "repeatable": true,
       "component": "data.contact-info"
-    },
-    "positions": {
-      "via": "person",
-      "collection": "position"
     }
   }
 }

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_data_committee_years",
+  "info": {
+    "name": "committeePosition",
+    "icon": "star",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "position": {
+      "model": "position"
+    },
+    "priority": {
+      "type": "integer"
+    }
+  }
+}

@@ -5,4 +5,13 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+    find: ctx => {
+        return strapi.query('committee').find(ctx.query, [
+           { path: 'committeePosition' },
+            { path: 'position' },
+            { path: 'holder' },
+            { path: 'people' },
+        ]);
+    },
+};

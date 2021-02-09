@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "committees",
   "info": {
-    "name": "Committee"
+    "name": "Committee",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -16,6 +17,11 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "committeePosition": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.committee-year"
     }
   }
 }
