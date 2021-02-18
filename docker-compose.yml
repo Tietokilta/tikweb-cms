@@ -1,0 +1,19 @@
+version: '3.5'
+
+services:
+  strapi:
+    build: ./
+    ports:
+     - 1337:1337
+    volumes:
+      - ./api:/usr/src/app/api
+      - ./components:/usr/src/app/components
+      - ./config:/usr/src/app/config
+      - ./extensions:/usr/src/app/extensions
+      - ./public:/usr/src/app/public
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: admin
+    #ports:
+    #  - 5432:5432
