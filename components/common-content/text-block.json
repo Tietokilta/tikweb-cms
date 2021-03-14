@@ -2,11 +2,12 @@
   "collectionName": "components_common_content_text_blocks",
   "info": {
     "name": "TextBlock",
-    "icon": "align-justify"
+    "icon": "align-justify",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Text": {
+    "text": {
       "type": "richtext",
       "required": true
     }
