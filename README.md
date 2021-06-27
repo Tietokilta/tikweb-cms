@@ -8,5 +8,21 @@
 mv .env.example .env 
 
 npm install
+npm run config-restore
 npm run develop
+```
+
+
+## Admin panel config
+
+Whenever you change layout of the admin panel components, commit the changes to repo with
+```
+npm run config-dump
+```
+this creates a config json file
+
+
+To apply the config file, run 
+```
+npm run config-restore
 ```
