@@ -8,7 +8,7 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "config-dumb": "strapi configuration:dump -f strapiConfig.json",
+    "config-dump": "strapi configuration:dump -f strapiConfig.json",
     "config-restore": "strapi configuration:restore -f strapiConfig.json"
   },
   "devDependencies": {},
