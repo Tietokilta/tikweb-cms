@@ -6,6 +6,7 @@
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
+    "start-with-config": "npm run config-restore && strapi start",
     "build": "strapi build",
     "strapi": "strapi",
     "config-dump": "strapi configuration:dump -f strapiConfig.json",
