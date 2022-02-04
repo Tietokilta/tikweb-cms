@@ -4,15 +4,19 @@
 
 ## Requirements
 - Docker
+- Docker Compose
 - NPM
 
 ## Setup
 
 ```
-docker-compose up -d
+# Start the database
+docker-compose up -d  
 
+# Set the default dotenv configuration
 mv .env.example .env 
 
+# Start the CMS app
 npm install
 npm run config-restore
 npm run develop
