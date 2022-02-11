@@ -28,3 +28,12 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/tietokilta/strapi-cms:latest
+      - name: Login via Azure CLI
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+        
+      - uses: azure/webapps-deploy@v2
+        with:
+          app-name: tikweb-prod-app-cms
+          images: 'ghcr.io/tietokilta/strapi-cms:latest'
