@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_navigation_sub_items",
+  "info": {
+    "name": "subItem",
+    "icon": "asterisk",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "navigatesTo": {
+      "model": "page"
+    }
+  }
+}
