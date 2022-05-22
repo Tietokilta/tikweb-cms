@@ -28,19 +28,10 @@
     "supertest": "^6.1.6"
   },
   "dependencies": {
-    "knex": "<0.20.0",
-    "pg": "^8.7.1",
-    "strapi": "^3.6.8",
-    "strapi-admin": "^3.6.8",
-    "strapi-connector-bookshelf": "^3.6.8",
-    "strapi-plugin-content-manager": "^3.6.8",
-    "strapi-plugin-content-type-builder": "^3.6.8",
-    "strapi-plugin-email": "^3.6.8",
-    "strapi-plugin-graphql": "^3.6.8",
-    "strapi-plugin-i18n": "^3.6.8",
-    "strapi-plugin-upload": "^3.6.8",
-    "strapi-plugin-users-permissions": "^3.6.8",
-    "strapi-utils": "^3.6.8"
+    "@strapi/strapi": "4.1.11",
+    "@strapi/plugin-users-permissions": "4.1.11",
+    "@strapi/plugin-i18n": "4.1.11",
+    "better-sqlite3": "7.4.6"
   },
   "author": {
     "name": "A Strapi developer"
@@ -49,7 +40,7 @@
     "uuid": "f32c58af-68af-41d6-9877-711d8953de28"
   },
   "engines": {
-    "node": ">=10.16.0 <=14.x.x",
+    "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
   },
   "jest": {

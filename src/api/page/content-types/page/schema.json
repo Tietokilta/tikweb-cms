@@ -2,12 +2,12 @@
   "kind": "collectionType",
   "collectionName": "pages",
   "info": {
-    "name": "Page",
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
     "description": ""
   },
   "options": {
-    "increments": true,
-    "timestamps": true,
     "draftAndPublish": true
   },
   "pluginOptions": {
@@ -36,9 +36,7 @@
     },
     "content": {
       "type": "dynamiczone",
-      "components": [
-        "common-content.text-block"
-      ],
+      "components": ["common-content.text-block"],
       "pluginOptions": {
         "i18n": {
           "localized": true
