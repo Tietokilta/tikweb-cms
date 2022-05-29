@@ -11,10 +11,10 @@ beforeAll(async () => {
 afterAll(async () => {
   const dbSettings = strapi.config.get('database.connections.default.settings')
 
-  //close server to release the db-file
+  // close server to release the db-file
   await strapi.destroy()
 
-  //delete test database after all tests
+  // delete test database after all tests
   if (dbSettings && dbSettings.filename) {
     const tmpDbFile = `${__dirname}/../${dbSettings.filename}`
     if (fs.existsSync(tmpDbFile)) {

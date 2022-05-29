@@ -1,4 +1,4 @@
-module.exports = ({ env }) => ({
+module.exports = () => ({
   responses: {
     privateAttributes: ['_v', 'created_at', 'published_at', 'updated_at'],
   },

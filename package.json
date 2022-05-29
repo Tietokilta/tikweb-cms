@@ -12,10 +12,18 @@
     "config-dump": "strapi configuration:dump -f strapiConfig.json",
     "config-restore": "strapi configuration:restore -f strapiConfig.json",
     "test": "jest --forceExit --detectOpenHandles",
-    "coverage": "jest --collectCoverage"
+    "coverage": "jest --collectCoverage",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix"
   },
   "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "jest": "^27.2.0",
+    "prettier": "^2.6.2",
     "sqlite3": "^5.0.2",
     "supertest": "^6.1.6"
   },

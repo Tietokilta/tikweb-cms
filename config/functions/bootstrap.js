@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * An asynchronous bootstrap function that runs before
  * your application gets started.
@@ -12,9 +10,8 @@
 
 module.exports = () => {}
 
-const findPublicRole = async () => {
-  return strapi.query('role', 'users-permissions').findOne({ type: 'public' })
-}
+const findPublicRole = async () =>
+  strapi.query('role', 'users-permissions').findOne({ type: 'public' })
 
 const setDefaultPermissions = async () => {
   const allowedPublic = ['count', 'find', 'findone']
