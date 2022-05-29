@@ -36,20 +36,14 @@
     },
     "content": {
       "type": "dynamiczone",
-      "components": ["common-content.text-block"],
+      "components": [
+        "common-content.text-block"
+      ],
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
-    },
-    "parent": {
-      "model": "page",
-      "via": "children"
-    },
-    "children": {
-      "collection": "page",
-      "via": "parent"
     },
     "unlisted": {
       "type": "boolean",
@@ -59,6 +53,11 @@
           "localized": true
         }
       }
+    },
+    "parentPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
     }
   }
 }
