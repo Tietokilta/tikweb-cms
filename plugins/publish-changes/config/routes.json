@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/runs/start",
+      "handler": "publish-changes.runsStart",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/runs/latest",
+      "handler": "publish-changes.getRun",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
