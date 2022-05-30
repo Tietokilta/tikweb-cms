@@ -6,14 +6,25 @@ const LatestRun = () => {
   const [latestRun, setLatestRun] = useState({});
 
   useEffect(() => {
-    request(`${strapi.backendURL}/${pluginId}/runs/latest`)
-      .then((res) => setLatestRun(res))
-      .catch((e) =>
+    async function fetchLatestRun() {
+      try {
+        const res = await request(
+          `${strapi.backendURL}/${pluginId}/runs/latest`
+        );
+        setLatestRun(res);
+      } catch (e) {
         strapi.notification.toggle({
           type: "warning",
           message: e.response.payload.error,
-        })
-      );
+        });
+      }
+    }
+
+    fetchLatestRun();
+
+    const interval = setInterval(fetchLatestRun, 10000);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
