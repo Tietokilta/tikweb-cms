@@ -5,7 +5,7 @@
       "path": "/runs/start",
       "handler": "publish-changes.runsStart",
       "config": {
-        "policies": []
+        "policies": ["isSuperAdmin"]
       }
     },
     {
@@ -13,7 +13,7 @@
       "path": "/runs/latest",
       "handler": "publish-changes.getRun",
       "config": {
-        "policies": []
+        "policies": ["isSuperAdmin"]
       }
     }
   ]
