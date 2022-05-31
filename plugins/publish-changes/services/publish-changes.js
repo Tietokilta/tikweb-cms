@@ -2,7 +2,6 @@
 
 const { Octokit } = require("@octokit/core");
 const { createAppAuth } = require("@octokit/auth-app")
-const jwt = require("jsonwebtoken");
 
 /**
  * publish-changes.js service
@@ -40,31 +39,6 @@ async function getLatestRun() {
   );
 
   return ranFromStrapi[0];
-}
-
-const tokenCache = {
-  expiry: new Date(),
-  token: "",
-};
-
-function generateJWT() {
-  if (tokenCache.expiry > new Date()) {
-    return tokenCache.token;
-  }
-
-  const payload = {
-    iat: Math.floor(new Date() / 1000) - 60,
-    exp: Math.floor(new Date() / 1000) + (10 * 60),
-    iss: process.env.GITHUB_APP_ID,
-  };
-  const token = jwt.sign(payload, process.env.GITHUB_APP_KEY, { algorithm: "RS256" });
-  tokenCache.expiry = payload.exp;
-  tokenCache.token = token;
-
-  return token;
-}
-
-async function getInstallations() {
 }
 
 module.exports = { startBuild, getLatestRun };
