@@ -7,10 +7,6 @@
 import React, { memo } from "react";
 import BuildFrontend from "../../components/BuildFrontend";
 
-const HomePage = () => (
-  <div>
-    <BuildFrontend />
-  </div>
-);
+const HomePage = () => <BuildFrontend />
 
 export default memo(HomePage);
