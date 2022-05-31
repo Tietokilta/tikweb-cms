@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { request } from "strapi-helper-plugin";
 import pluginId from "../pluginId";
 
@@ -6,12 +6,15 @@ const LatestRun = () => {
   const [latestRun, setLatestRun] = useState({});
 
   useEffect(() => {
+    let timeout;
+    
     async function fetchLatestRun() {
       try {
         const res = await request(
           `${strapi.backendURL}/${pluginId}/runs/latest`
         );
         setLatestRun(res);
+        timeout = setTimeout(fetchLatestRun, 10000);
       } catch (e) {
         strapi.notification.toggle({
           type: "warning",
@@ -22,9 +25,7 @@ const LatestRun = () => {
 
     fetchLatestRun();
 
-    const interval = setInterval(fetchLatestRun, 10000);
-
-    return () => clearInterval(interval);
+    return () => clearTimeout(timeout);
   }, []);
 
   return (
