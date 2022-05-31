@@ -1,10 +1,10 @@
 {
   "name": "strapi-plugin-publish-changes",
   "version": "0.0.0",
-  "description": "This is the description of the plugin.",
+  "description": "Launch a GitHub Action from Strapi.",
   "strapi": {
     "name": "publish-changes",
-    "icon": "plug",
+    "icon": "upload",
     "description": "Launch a GitHub Action from Strapi."
   },
   "dependencies": {
