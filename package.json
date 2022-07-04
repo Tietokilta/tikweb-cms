@@ -41,8 +41,8 @@
     "uuid": "f32c58af-68af-41d6-9877-711d8953de28"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
-    "npm": ">=6.0.0"
+    "node": "^16.0.0",
+    "npm": "^8.0.0"
   },
   "jest": {
     "testPathIgnorePatterns": [
