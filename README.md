@@ -19,22 +19,23 @@ mv .env.example .env
 
 # Start the CMS app
 npm install
+npm run build
 npm run config-restore
 npm run develop
 ```
 
-## Admin panel config
+## Settings dump
 
-Whenever you change layout of the admin panel components, commit the changes to repo with
+Strapi saves some settings to database. In order to share these across deployments, dump the settings using:
 
 ```
 npm run config-dump
 ```
 
-this creates a config json file
-
-To apply the config file, run
+and commit the file (`strapiConfig.json`) to git. In order to restore configuration, run:
 
 ```
 npm run config-restore
 ```
+
+Configuration is restored automatically on docker container start (so e.g. in production)
