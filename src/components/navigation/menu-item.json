@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_navigation_menu_items",
+  "info": {
+    "displayName": "MenuItem",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "navigatesTo": {
+      "model": "page"
+    },
+    "subItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.sub-item"
+    }
+  }
+}
