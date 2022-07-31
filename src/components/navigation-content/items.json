@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_navigation_content_items",
+  "info": {
+    "displayName": "items",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    }
+  }
+}
