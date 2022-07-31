@@ -26,7 +26,7 @@ npm run develop
 
 ## Settings dump
 
-Strapi saves some settings to database. In order to share these across deployments, dump the settings using:
+Strapi saves some settings in the database. In order to propagate these to the repository and eventually production, dump the settings using:
 
 ```
 npm run config-dump
@@ -38,4 +38,4 @@ and commit the file (`strapiConfig.json`) to git. In order to restore configurat
 npm run config-restore
 ```
 
-Configuration is restored automatically on docker container start (so e.g. in production)
+Configuration is restored automatically on docker container start (so e.g. in production).
