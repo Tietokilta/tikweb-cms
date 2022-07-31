@@ -1,9 +1,7 @@
-module.exports = () => ({
-  responses: {
-    privateAttributes: ['_v', 'created_at', 'published_at', 'updated_at'],
-  },
+module.exports = {
   rest: {
-    defaultLimit: 100,
-    maxLimit: 250,
+    defaultLimit: 25,
+    maxLimit: 100,
+    withCount: true,
   },
-})
+}

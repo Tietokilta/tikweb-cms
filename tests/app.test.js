@@ -2,7 +2,6 @@ const fs = require('fs')
 const { setupStrapi } = require('./helpers/strapi')
 
 /** this code is called once before any test is called */
-jest.setTimeout(15000)
 beforeAll(async () => {
   await setupStrapi() // singleton so it can be called many times
 })
@@ -12,7 +11,7 @@ afterAll(async () => {
   const dbSettings = strapi.config.get('database.connections.default.settings')
 
   // close server to release the db-file
-  await strapi.destroy()
+  await strapi.server.close()
 
   // delete test database after all tests
   if (dbSettings && dbSettings.filename) {

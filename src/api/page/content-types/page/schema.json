@@ -2,12 +2,12 @@
   "kind": "collectionType",
   "collectionName": "pages",
   "info": {
-    "name": "Page",
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
     "description": ""
   },
   "options": {
-    "increments": true,
-    "timestamps": true,
     "draftAndPublish": true
   },
   "pluginOptions": {
@@ -45,14 +45,6 @@
         }
       }
     },
-    "parent": {
-      "model": "page",
-      "via": "children"
-    },
-    "children": {
-      "collection": "page",
-      "via": "parent"
-    },
     "unlisted": {
       "type": "boolean",
       "default": false,
@@ -61,6 +53,11 @@
           "localized": true
         }
       }
+    },
+    "parentPage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
     }
   }
 }
