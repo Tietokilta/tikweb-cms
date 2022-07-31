@@ -33,7 +33,7 @@
     "@strapi/plugin-users-permissions": "^4.3.0",
     "@strapi/strapi": "^4.3.0",
     "better-sqlite3": "7.4.6",
-    "strapi-provider-upload-azure-storage": "^2.0.0",
+    "strapi-provider-upload-azure-storage": "^2.1.0",
     "pg": "^8.7.3"
   },
   "author": {
