@@ -54,9 +54,14 @@
         }
       }
     },
-    "parentPage": {
+    "parent": {
       "type": "relation",
       "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "children": {
+      "type": "relation",
+      "relation": "oneToMany",
       "target": "api::page.page"
     }
   }

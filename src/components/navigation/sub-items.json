@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_navigation_content_sub_items",
+  "info": {
+    "displayName": "SubItem",
+    "icon": "sitemap",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "navigatesTo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    }
+  }
+}

@@ -4,18 +4,19 @@
   "info": {
     "singularName": "navigation",
     "pluralName": "navigations",
-    "displayName": "navigation"
+    "displayName": "Navigation",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Items": {
+    "items": {
       "displayName": "items",
       "type": "component",
       "repeatable": true,
-      "component": "navigation-content.items"
+      "component": "navigation.items"
     }
   }
 }

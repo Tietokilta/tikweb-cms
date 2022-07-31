@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_navigation_content_items",
+  "info": {
+    "displayName": "MenuItem",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "navigatesTo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "subItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.sub-items"
+    }
+  }
+}
