@@ -1,2 +1,17 @@
+# NPM
 node_modules
+
+# Strapi
+.cache
+build
+
+# Dev mode stuff
+.tmp
+public/uploads/**
+
+# Secrets
 .env
+
+# Other unnecessary stuff
+.github
+.git
