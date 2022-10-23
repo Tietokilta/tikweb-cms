@@ -19,24 +19,25 @@ mv .env.example .env
 
 # Start the CMS app
 npm install
+npm run build
 npm run config-restore
 npm run develop
 ```
 
-Go to the strapi admin panel at http://localhost:1337 and go to `Settings > Internationalization` and add `Finnish (fi)` as a locale.
+**Important:** Go to the strapi admin panel at http://localhost:1337 and go to `Settings > Internationalization` and add `Finnish (fi)` as a locale. Otherwise your models will not show up in Content Manager.
 
-## Admin panel config
+## Settings dump
 
-Whenever you change layout of the admin panel components, commit the changes to repo with
+Strapi saves some settings in the database. In order to propagate these to the repository and eventually production, dump the settings using:
 
 ```
 npm run config-dump
 ```
 
-this creates a config json file
-
-To apply the config file, run
+and commit the file (`strapiConfig.json`) to git. In order to restore configuration, run:
 
 ```
 npm run config-restore
 ```
+
+Configuration is restored automatically on docker container start (so e.g. in production).
