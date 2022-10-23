@@ -4,6 +4,8 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
+COPY src/plugins/publish-changes/package*.json src/plugins/publish-changes/
+
 RUN npm install
 
 COPY . .

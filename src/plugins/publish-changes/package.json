@@ -1,0 +1,32 @@
+{
+  "name": "strapi-plugin-publish-changes",
+  "version": "0.0.0",
+  "description": "Launch a GitHub Action from Strapi.",
+  "strapi": {
+    "name": "publish-changes",
+    "icon": "upload",
+    "description": "Launch a GitHub Action from Strapi."
+  },
+  "dependencies": {
+    "@octokit/auth-app": "^3.6.1",
+    "@octokit/core": "^3.6.0",
+    "@strapi/helper-plugin": "^4.3.0"
+  },
+  "author": {
+    "name": "A Strapi developer",
+    "email": "",
+    "url": ""
+  },
+  "maintainers": [
+    {
+      "name": "A Strapi developer",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

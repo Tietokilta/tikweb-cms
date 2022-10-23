@@ -11,7 +11,9 @@
       "required": true
     },
     "navigatesTo": {
-      "model": "page"
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
     },
     "subItems": {
       "type": "component",

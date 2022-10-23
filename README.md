@@ -24,6 +24,8 @@ npm run config-restore
 npm run develop
 ```
 
+**Important:** Go to the strapi admin panel at http://localhost:1337 and go to `Settings > Internationalization` and add `Finnish (fi)` as a locale. Otherwise your models will not show up in Content Manager.
+
 ## Settings dump
 
 Strapi saves some settings in the database. In order to propagate these to the repository and eventually production, dump the settings using:
