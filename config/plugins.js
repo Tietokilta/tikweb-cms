@@ -1,6 +1,6 @@
 module.exports = ({ env }) => ({
   'publish-changes': {
-    enabled: true,
+    enabled: Boolean(process.env.GITHUB_APP_ID),
     resolve: './src/plugins/publish-changes',
   },
 })
