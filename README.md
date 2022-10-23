@@ -23,6 +23,8 @@ npm run config-restore
 npm run develop
 ```
 
+Go to the strapi admin panel at http://localhost:1337 and go to `Settings > Internationalization` and add `Finnish (fi)` as a locale.
+
 ## Admin panel config
 
 Whenever you change layout of the admin panel components, commit the changes to repo with
