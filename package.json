@@ -14,7 +14,8 @@
     "test": "jest --forceExit --detectOpenHandles",
     "coverage": "jest --collectCoverage",
     "lint": "eslint . --ext .js",
-    "lint:fix": "eslint . --ext .js --fix"
+    "lint:fix": "eslint . --ext .js --fix",
+    "removeDuplicates": "node removeDuplicatesFromStrapiConfig.js"
   },
   "devDependencies": {
     "eslint": "^8.16.0",
