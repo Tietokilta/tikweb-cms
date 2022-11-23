@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_comittee_card_comittee_cards",
+  "info": {
+    "displayName": "Committee member",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": false
+    },
+    "email": {
+      "type": "email"
+    },
+    "telegramUsername": {
+      "type": "string"
+    },
+    "picture": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "phoneNumber": {
+      "type": "string"
+    }
+  }
+}
