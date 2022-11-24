@@ -17,21 +17,21 @@
     "lint:fix": "eslint . --ext .js --fix"
   },
   "devDependencies": {
-    "eslint": "^8.27.0",
+    "eslint": "^8.28.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "jest": "^27.5.1",
-    "prettier": "^2.6.2",
+    "prettier": "^2.8.0",
     "sqlite3": "^5.1.2",
     "supertest": "^6.3.1"
   },
   "dependencies": {
-    "@strapi/plugin-graphql": "^4.4.7",
-    "@strapi/plugin-i18n": "^4.4.7",
-    "@strapi/plugin-users-permissions": "^4.4.7",
-    "@strapi/strapi": "^4.4.7",
+    "@strapi/plugin-graphql": "^4.5.2",
+    "@strapi/plugin-i18n": "^4.5.2",
+    "@strapi/plugin-users-permissions": "^4.5.2",
+    "@strapi/strapi": "^4.5.2",
     "better-sqlite3": "7.4.6",
     "pg": "^8.8.0",
     "strapi-plugin-navigation": "^2.2.2",
