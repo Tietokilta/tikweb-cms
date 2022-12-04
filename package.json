@@ -36,6 +36,7 @@
     "better-sqlite3": "7.4.6",
     "pg": "^8.8.0",
     "strapi-plugin-navigation": "^2.2.2",
+    "strapi-plugin-populate-deep": "^1.1.2",
     "strapi-plugin-publish-changes": "file:src/plugins/publish-changes",
     "strapi-provider-upload-azure-storage": "^2.1.0"
   },

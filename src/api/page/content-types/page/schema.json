@@ -28,7 +28,8 @@
     "content": {
       "type": "dynamiczone",
       "components": [
-        "common-content.text-block"
+        "common-content.text-block",
+        "common-content.committee"
       ],
       "pluginOptions": {
         "i18n": {
