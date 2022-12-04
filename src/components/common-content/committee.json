@@ -14,7 +14,7 @@
     "members": {
       "type": "component",
       "repeatable": true,
-      "component": "committee-member.comittee-card"
+      "component": "committee-member.committee-member"
     }
   }
 }
